@@ -1,0 +1,768 @@
+I0426 14:26:01.292774    7674 backend.go:420] found username for access token
+I0426 14:26:01.543271    7674 backend.go:420] found username for access token
+I0426 14:26:01.638672    7674 ignore.go:44] Explicitly ignoring and discarding error: no git repository found from /home/pedwards/repos/aws-plugin-issue/Pulumi.yaml
+I0426 14:26:01.978216    7674 update.go:192] *** Starting Update(preview=true) ***
+I0426 14:26:01.978846    7674 plugins.go:76] gatherPluginsFromProgram(): gathering plugins from language host
+I0426 14:26:02.062630    7674 plugins.go:1057] GetPluginPath(language, go, <nil>): found on $PATH /home/pedwards/.pulumi/bin/pulumi-language-go
+I0426 14:26:02.064196    7674 plugin.go:184] Launching plugin 'go' from '/home/pedwards/.pulumi/bin/pulumi-language-go' with args: -root=/home/pedwards/repos/aws-plugin-issue,127.0.0.1:44269
+I0426 14:26:02.144102    7674 langruntime_plugin.go:207] langhost[go].GetPluginInfo() executing
+I0426 14:26:02.144687    7674 langruntime_plugin.go:115] langhost[go].GetRequiredPlugins(proj=aws-plugin-issue,pwd=/home/pedwards/repos/aws-plugin-issue,program=.) executing
+I0426 14:26:02.393284    7674 langruntime_plugin.go:157] langhost[go].GetRequiredPlugins(proj=aws-plugin-issue,pwd=/home/pedwards/repos/aws-plugin-issue,program=.) success: #versions=1
+I0426 14:26:02.393361    7674 plugins.go:88] gatherPluginsFromProgram(): plugin go <nil> () is required by language host
+I0426 14:26:02.393440    7674 plugins.go:88] gatherPluginsFromProgram(): plugin aws 4.38.1 () is required by language host
+I0426 14:26:02.393468    7674 plugins.go:100] gatherPluginsFromSnapshot(): gathering plugins from snapshot
+I0426 14:26:02.393479    7674 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev", not a provider
+I0426 14:26:02.393490    7674 plugins.go:121] gatherPluginsFromSnapshot(): plugin aws 4.38.1 is required by first-class provider "urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws"
+I0426 14:26:02.393498    7674 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole", not a provider
+I0426 14:26:02.393506    7674 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1", not a provider
+I0426 14:26:02.393511    7674 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0", not a provider
+I0426 14:26:02.393516    7674 plugins.go:109] gatherPluginsFromSnapshot(): skipping "urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example", not a provider
+I0426 14:26:02.393522    7674 plugins.go:121] gatherPluginsFromSnapshot(): plugin aws 4.38.1 is required by first-class provider "urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default"
+I0426 14:26:02.393529    7674 plugins.go:137] ensurePluginsAreInstalled(): beginning
+I0426 14:26:02.469983    7674 plugins.go:1057] GetPluginPath(language, go, <nil>): found on $PATH /home/pedwards/.pulumi/bin/pulumi-language-go
+I0426 14:26:02.470034    7674 plugins.go:142] ensurePluginsAreInstalled(): plugin go <nil> already installed
+I0426 14:26:02.543773    7674 plugins.go:1098] GetPluginPath(resource, aws, 4.38.1): enabling new plugin behavior
+I0426 14:26:02.543818    7674 plugins.go:1184] SelectCompatiblePlugin(..., aws): beginning
+I0426 14:26:02.543832    7674 plugins.go:1213] SelectCompatiblePlugin(..., aws): best plugin aws-4.38.1: semver match
+I0426 14:26:02.543838    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.0: semver mismatch
+I0426 14:26:02.543842    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.2: semver mismatch
+I0426 14:26:02.543846    7674 plugins.go:1226] SelectCompatiblePlugin(..., aws): selecting plugin 'aws-4.38.1': best match 
+I0426 14:26:02.543857    7674 plugins.go:1145] GetPluginPath(resource, aws, 4.38.1): found in cache at /home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws
+I0426 14:26:02.543870    7674 plugins.go:142] ensurePluginsAreInstalled(): plugin aws 4.38.1 already installed
+I0426 14:26:02.543874    7674 plugins.go:157] ensurePluginsAreInstalled(): completed
+I0426 14:26:02.543914    7674 plugins.go:246] computeDefaultProviderPlugins(): considering go
+I0426 14:26:02.543954    7674 plugins.go:249] computeDefaultProviderPlugins(): skipping go, not a resource provider
+I0426 14:26:02.543962    7674 plugins.go:246] computeDefaultProviderPlugins(): considering aws-4.38.1
+I0426 14:26:02.543971    7674 plugins.go:277] computeDefaultProviderPlugins(): plugin aws-4.38.1 selected for package aws (first seen)
+I0426 14:26:02.543977    7674 plugins.go:283] computeDefaultProviderPlugins(): summary of default plugins:
+I0426 14:26:02.543981    7674 plugins.go:285]   aws             = 4.38.1
+I0426 14:26:02.544077    7674 registry.go:127] provider(urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev): 
+I0426 14:26:02.619851    7674 plugins.go:1098] GetPluginPath(resource, aws, 4.38.1): enabling new plugin behavior
+I0426 14:26:02.619906    7674 plugins.go:1184] SelectCompatiblePlugin(..., aws): beginning
+I0426 14:26:02.619924    7674 plugins.go:1213] SelectCompatiblePlugin(..., aws): best plugin aws-4.38.1: semver match
+I0426 14:26:02.619930    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.0: semver mismatch
+I0426 14:26:02.619934    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.2: semver mismatch
+I0426 14:26:02.619938    7674 plugins.go:1226] SelectCompatiblePlugin(..., aws): selecting plugin 'aws-4.38.1': best match 
+I0426 14:26:02.619948    7674 plugins.go:1145] GetPluginPath(resource, aws, 4.38.1): found in cache at /home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws
+I0426 14:26:02.619956    7674 plugin.go:184] Launching plugin 'aws (resource)' from '/home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws' with args: 127.0.0.1:44269
+I0426 14:26:02.740946    7674 provider_plugin.go:1474] Provider[aws, 0xc0009786c0].GetPluginInfo() executing
+I0426 14:26:02.741251    7674 provider_plugin.go:494] Provider[aws, 0xc0009786c0].Configure() executing (#vars=7)
+I0426 14:26:02.741377    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: profile={pulumi-ce}
+I0426 14:26:02.741438    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: region={us-west-2}
+I0426 14:26:02.741449    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: skipCredentialsValidation={true}
+I0426 14:26:02.741453    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: skipGetEc2Platforms={true}
+I0426 14:26:02.741457    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: skipMetadataApiCheck={true}
+I0426 14:26:02.741460    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: skipRegionValidation={true}
+I0426 14:26:02.741464    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0009786c0].Configure().inputs]: version={4.38.1}
+I0426 14:26:02.741488    7674 registry.go:162] loaded provider urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894
+I0426 14:26:02.741499    7674 registry.go:127] provider(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole): urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894
+I0426 14:26:02.741504    7674 registry.go:127] provider(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1): urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894
+I0426 14:26:02.741510    7674 registry.go:127] provider(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0): urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894
+I0426 14:26:02.741521    7674 registry.go:127] provider(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example): urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894
+I0426 14:26:02.745778    7674 eventsink.go:59] AWS Auth provider used: "SharedCredentialsProvider"
+I0426 14:26:02.745813    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>AWS Auth provider used: "SharedCredentialsProvider"<{%reset%}>)
+I0426 14:26:02.824131    7674 plugins.go:1098] GetPluginPath(resource, aws, 4.38.1): enabling new plugin behavior
+I0426 14:26:02.824178    7674 plugins.go:1184] SelectCompatiblePlugin(..., aws): beginning
+I0426 14:26:02.824194    7674 plugins.go:1213] SelectCompatiblePlugin(..., aws): best plugin aws-4.38.1: semver match
+I0426 14:26:02.824199    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.0: semver mismatch
+I0426 14:26:02.824204    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.2: semver mismatch
+I0426 14:26:02.824207    7674 plugins.go:1226] SelectCompatiblePlugin(..., aws): selecting plugin 'aws-4.38.1': best match 
+I0426 14:26:02.824219    7674 plugins.go:1145] GetPluginPath(resource, aws, 4.38.1): found in cache at /home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws
+I0426 14:26:02.824226    7674 plugin.go:184] Launching plugin 'aws (resource)' from '/home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws' with args: 127.0.0.1:44269
+I0426 14:26:02.835861    7674 eventsink.go:59] AWS Auth provider used: "SharedCredentialsProvider"
+I0426 14:26:02.835904    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>AWS Auth provider used: "SharedCredentialsProvider"<{%reset%}>)
+I0426 14:26:02.844611    7674 eventsink.go:59] Trying to get account information via iam:GetUser
+I0426 14:26:02.844653    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Trying to get account information via iam:GetUser<{%reset%}>)v
+I0426 14:26:02.946510    7674 provider_plugin.go:1474] Provider[aws, 0xc0014b9260].GetPluginInfo() executing
+I0426 14:26:02.946865    7674 provider_plugin.go:494] Provider[aws, 0xc0014b9260].Configure() executing (#vars=3)
+I0426 14:26:02.946902    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0014b9260].Configure().inputs]: profile={pulumi-ce}
+I0426 14:26:02.946913    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0014b9260].Configure().inputs]: region={us-west-2}
+I0426 14:26:02.946917    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0014b9260].Configure().inputs]: version={4.38.1}
+I0426 14:26:02.946942    7674 registry.go:162] loaded provider urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default::77e897fc-fcdc-4ed8-bc37-693b7f37ee99
+I0426 14:26:02.947067    7674 step_generator.go:1118] stepGenerator.GeneratePendingDeletes(): scanning previous snapshot for pending deletes
+I0426 14:26:02.947094    7674 langruntime_plugin.go:168] langhost[go].Run(pwd=/home/pedwards/repos/aws-plugin-issue,program=.,#args=0,proj=aws-plugin-issue,stack=dev,#config=2,dryrun=true) executing
+I0426 14:26:02.947161    7674 deployment_executor.go:474] deploymentExecutor.retirePendingDeletes(...): no pending deletions
+I0426 14:26:02.947178    7674 deployment_executor.go:255] deploymentExecutor.Execute(...): waiting for incoming events
+I0426 14:26:02.947195    7674 step_executor.go:364] StepExecutor worker(-2): worker coming online
+I0426 14:26:02.947199    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:02.950961    7674 eventsink.go:59] AWS Auth provider used: "SharedCredentialsProvider"
+I0426 14:26:02.950997    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>AWS Auth provider used: "SharedCredentialsProvider"<{%reset%}>)
+I0426 14:26:03.037912    7674 eventsink.go:59] AWS Auth provider used: "SharedCredentialsProvider"
+I0426 14:26:03.037952    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>AWS Auth provider used: "SharedCredentialsProvider"<{%reset%}>)
+I0426 14:26:03.047273    7674 eventsink.go:59] Trying to get account information via iam:GetUser
+I0426 14:26:03.047314    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Trying to get account information via iam:GetUser<{%reset%}>)
+I0426 14:26:03.886081    7674 source_eval.go:629] ResourceMonitor.SupportsFeature(id: resourceReferences) = true
+I0426 14:26:03.887218    7674 source_eval.go:629] ResourceMonitor.SupportsFeature(id: outputValues) = true
+I0426 14:26:03.888099    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=pulumi:pulumi:Stack, name=aws-plugin-issue-dev, custom=false, #props=0, parent=, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:03.888257    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=pulumi:pulumi:Stack,name=aws-plugin-issue-dev,#props=0
+I0426 14:26:03.888289    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:03.888315    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:03.888369    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev' after diff (same) (inputs=map[])
+I0426 14:26:03.888417    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:03.888443    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:03.888469    7674 step_executor.go:364] StepExecutor worker(0): launching oneshot worker
+I0426 14:26:03.888529    7674 step_executor.go:364] StepExecutor worker(0): applying step same on urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev (preview true)
+I0426 14:26:03.888577    7674 step_executor.go:364] StepExecutor worker(0): step same on urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev retired
+I0426 14:26:03.888647    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev
+I0426 14:26:03.888678    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=pulumi:pulumi:Stack, urn=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, #outs=0
+I0426 14:26:03.889237    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: profile={pulumi-ce}
+I0426 14:26:03.889391    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: region={us-west-2}
+I0426 14:26:03.889400    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipCredentialsValidation={true}
+I0426 14:26:03.889404    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipGetEc2Platforms={true}
+I0426 14:26:03.889408    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipMetadataApiCheck={true}
+I0426 14:26:03.889411    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipRegionValidation={true}
+I0426 14:26:03.889421    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=pulumi:providers:aws, name=aws, custom=true, #props=6, parent=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:03.889457    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=pulumi:providers:aws,name=aws,#props=6
+I0426 14:26:03.889500    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:03.889514    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:03.889527    7674 registry.go:260] ProviderRegistry.Check(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) executing (#olds=7,#news=6)
+I0426 14:26:03.962930    7674 plugins.go:1128] GetPluginPath(resource, aws, <nil>): found candidate (#4.38.1)
+I0426 14:26:03.962980    7674 plugins.go:1128] GetPluginPath(resource, aws, <nil>): found candidate (#5.1.0)
+I0426 14:26:03.962992    7674 plugins.go:1128] GetPluginPath(resource, aws, <nil>): found candidate (#5.1.2)
+I0426 14:26:03.963005    7674 plugins.go:1145] GetPluginPath(resource, aws, <nil>): found in cache at /home/pedwards/.pulumi/plugins/resource-aws-v5.1.2/pulumi-resource-aws
+I0426 14:26:03.963014    7674 plugin.go:184] Launching plugin 'aws (resource)' from '/home/pedwards/.pulumi/plugins/resource-aws-v5.1.2/pulumi-resource-aws' with args: 127.0.0.1:44269
+I0426 14:26:04.078393    7674 provider_plugin.go:1474] Provider[aws, 0xc001558540].GetPluginInfo() executing
+I0426 14:26:04.078793    7674 provider_plugin.go:222] Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) executing (#olds=7,#news=6)
+I0426 14:26:04.078814    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: profile={pulumi-ce}
+I0426 14:26:04.078824    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: region={us-west-2}
+I0426 14:26:04.078828    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipCredentialsValidation={true}
+I0426 14:26:04.078832    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipGetEc2Platforms={true}
+I0426 14:26:04.078836    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipMetadataApiCheck={true}
+I0426 14:26:04.078839    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipRegionValidation={true}
+I0426 14:26:04.078842    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: version={4.38.1}
+I0426 14:26:04.078847    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: profile={pulumi-ce}
+I0426 14:26:04.078851    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: region={us-west-2}
+I0426 14:26:04.078855    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipCredentialsValidation={true}
+I0426 14:26:04.078858    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipGetEc2Platforms={true}
+I0426 14:26:04.078861    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipMetadataApiCheck={true}
+I0426 14:26:04.078865    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipRegionValidation={true}
+I0426 14:26:04.079516    7674 provider_plugin.go:254] Provider[aws, 0xc001558540].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) unimplemented rpc: returning news as is
+I0426 14:26:04.079540    7674 registry.go:184] setProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0426 14:26:04.079551    7674 registry.go:304] ProviderRegistry.Diff(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws,b72324ce-bb1d-49cc-9756-3b5d6f84b894): executing (#olds=7,#news=6)
+I0426 14:26:04.079557    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0426 14:26:04.079591    7674 provider_plugin.go:327] Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) executing (#olds=7,#news=6)
+I0426 14:26:04.079602    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: profile={pulumi-ce}
+I0426 14:26:04.079609    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: region={us-west-2}
+I0426 14:26:04.079612    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipCredentialsValidation={true}
+I0426 14:26:04.079616    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipGetEc2Platforms={true}
+I0426 14:26:04.079620    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipMetadataApiCheck={true}
+I0426 14:26:04.079623    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: skipRegionValidation={true}
+I0426 14:26:04.079626    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).olds]: version={4.38.1}
+I0426 14:26:04.079631    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: profile={pulumi-ce}
+I0426 14:26:04.079638    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: region={us-west-2}
+I0426 14:26:04.079641    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipCredentialsValidation={true}
+I0426 14:26:04.079645    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipGetEc2Platforms={true}
+I0426 14:26:04.079648    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipMetadataApiCheck={true}
+I0426 14:26:04.079651    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws).news]: skipRegionValidation={true}
+I0426 14:26:04.079924    7674 provider_plugin.go:358] Provider[aws, 0xc001558540].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) unimplemented rpc: returning DiffUnknown with no replaces
+I0426 14:26:04.079937    7674 registry.go:342] ProviderRegistry.Diff(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws,b72324ce-bb1d-49cc-9756-3b5d6f84b894): executed (2, []resource.PropertyKey(nil))
+I0426 14:26:04.079970    7674 step_generator.go:861] Planner decided to update 'urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws' (oldprops=map[profile:{pulumi-ce} region:{us-west-2} skipCredentialsValidation:{true} skipGetEc2Platforms:{true} skipMetadataApiCheck:{true} skipRegionValidation:{true} version:{4.38.1}] inputs=map[profile:{pulumi-ce} region:{us-west-2} skipCredentialsValidation:{true} skipGetEc2Platforms:{true} skipMetadataApiCheck:{true} skipRegionValidation:{true}])
+I0426 14:26:04.080000    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.080008    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.080017    7674 step_executor.go:364] StepExecutor worker(1): launching oneshot worker
+I0426 14:26:04.080041    7674 step_executor.go:364] StepExecutor worker(1): applying step update on urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws (preview true)
+I0426 14:26:04.080048    7674 registry.go:404] ProviderRegistry.Update(b72324ce-bb1d-49cc-9756-3b5d6f84b894,urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws) executing (#olds=7,#news=6)
+I0426 14:26:04.080053    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0426 14:26:04.080059    7674 provider_plugin.go:494] Provider[aws, 0xc001558540].Configure() executing (#vars=6)
+I0426 14:26:04.080069    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: profile={pulumi-ce}
+I0426 14:26:04.080074    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: region={us-west-2}
+I0426 14:26:04.080077    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: skipCredentialsValidation={true}
+I0426 14:26:04.080081    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: skipGetEc2Platforms={true}
+I0426 14:26:04.080084    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: skipMetadataApiCheck={true}
+I0426 14:26:04.080088    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Configure().inputs]: skipRegionValidation={true}
+I0426 14:26:04.080092    7674 registry.go:184] setProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.080157    7674 step_executor.go:364] StepExecutor worker(1): step update on urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws retired
+I0426 14:26:04.080174    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws
+I0426 14:26:04.080185    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=pulumi:providers:aws, urn=urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws, #outs=6
+I0426 14:26:04.080190    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: profile={pulumi-ce}
+I0426 14:26:04.080194    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: region={us-west-2}
+I0426 14:26:04.080198    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipCredentialsValidation={true}
+I0426 14:26:04.080201    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipGetEc2Platforms={true}
+I0426 14:26:04.080204    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipMetadataApiCheck={true}
+I0426 14:26:04.080208    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(pulumi:providers:aws,aws)]: skipRegionValidation={true}
+I0426 14:26:04.081174    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.081217    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: assumeRolePolicy={{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}}
+I0426 14:26:04.081323    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=aws:iam/role:Role, name=eks-iam-eksRole, custom=true, #props=1, parent=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, protect=false, provider=urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:04.081360    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=aws:iam/role:Role,name=eks-iam-eksRole,#props=1
+I0426 14:26:04.081373    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:04.081378    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:04.081389    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.081416    7674 provider_plugin.go:570] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole) executing (#olds=6,#news=1
+I0426 14:26:04.085333    7674 eventsink.go:59] AWS Auth provider used: "SharedCredentialsProvider"
+I0426 14:26:04.085374    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>AWS Auth provider used: "SharedCredentialsProvider"<{%reset%}>)
+I0426 14:26:04.175307    7674 eventsink.go:59] Using profile from configuration: "pulumi-ce"
+I0426 14:26:04.175345    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Using profile from configuration: "pulumi-ce"<{%reset%}>)
+I0426 14:26:04.180956    7674 eventsink.go:59] Retrieved credentials from "SharedConfigCredentials: /home/pedwards/.aws/credentials"
+I0426 14:26:04.180989    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Retrieved credentials from "SharedConfigCredentials: /home/pedwards/.aws/credentials"<{%reset%}>)
+I0426 14:26:04.189794    7674 eventsink.go:59] Trying to get account information via iam:GetUser
+I0426 14:26:04.189830    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Trying to get account information via iam:GetUser<{%reset%}>)
+I0426 14:26:04.190380    7674 eventsink.go:59] [aws-sdk-go-v2] Request
+I0426 14:26:04.190409    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>[aws-sdk-go-v2] Request<{%reset%}>)
+I0426 14:26:04.190623    7674 eventsink.go:59] POST / HTTP/1.1
+I0426 14:26:04.190651    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>POST / HTTP/1.1<{%reset%}>)
+I0426 14:26:04.190911    7674 eventsink.go:59] Host: iam.amazonaws.com
+I0426 14:26:04.190940    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Host: iam.amazonaws.com<{%reset%}>)
+I0426 14:26:04.191213    7674 eventsink.go:59] User-Agent: APN/1.0 Pulumi/1.0 Pulumi/1.0 Pulumi-Aws/0.11+compatible (+https://www.pulumi.com) aws-sdk-go-v2/1.15.0 os/linux lang/go/1.17.8 md/GOOS/linux md/GOARCH/amd64 api/iam/1.18.0
+I0426 14:26:04.191242    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>User-Agent: APN/1.0 Pulumi/1.0 Pulumi/1.0 Pulumi-Aws/0.11+compatible (+https://www.pulumi.com) aws-sdk-go-v2/1.15.0 os/linux lang/go/1.17.8 md/GOOS/linux md/GOARCH/amd64 api/iam/1.18.0<{%reset%}>)
+I0426 14:26:04.191500    7674 eventsink.go:59] Content-Length: 33
+I0426 14:26:04.191529    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Content-Length: 33<{%reset%}>)
+I0426 14:26:04.191761    7674 eventsink.go:59] Amz-Sdk-Invocation-Id: 146e534a-6dc9-4b3d-be18-c7ae77b82158
+I0426 14:26:04.191788    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Amz-Sdk-Invocation-Id: 146e534a-6dc9-4b3d-be18-c7ae77b82158<{%reset%}>)
+I0426 14:26:04.192012    7674 eventsink.go:59] Amz-Sdk-Request: attempt=1; max=25
+I0426 14:26:04.192038    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Amz-Sdk-Request: attempt=1; max=25<{%reset%}>)
+I0426 14:26:04.192238    7674 eventsink.go:59] Authorization: AWS4-HMAC-SHA256 Credential=AKIAQYTQLLIFBE6BWYH6/20220426/us-east-1/iam/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=7f10e1869318cde61657fddaba587be757c150d73dbde83daa98052338cb89ae
+I0426 14:26:04.192275    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Authorization: AWS4-HMAC-SHA256 Credential=AKIAQYTQLLIFBE6BWYH6/20220426/us-east-1/iam/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;content-length;content-type;host;x-amz-date, Signature=7f10e1869318cde61657fddaba587be757c150d73dbde83daa98052338cb89ae<{%reset%}>)
+I0426 14:26:04.192498    7674 eventsink.go:59] Content-Type: application/x-www-form-urlencoded
+I0426 14:26:04.192526    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Content-Type: application/x-www-form-urlencoded<{%reset%}>)
+I0426 14:26:04.192751    7674 eventsink.go:59] X-Amz-Date: 20220426T212604Z
+I0426 14:26:04.192778    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>X-Amz-Date: 20220426T212604Z<{%reset%}>)
+I0426 14:26:04.193000    7674 eventsink.go:59] Accept-Encoding: gzip
+I0426 14:26:04.193026    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Accept-Encoding: gzip<{%reset%}>)
+I0426 14:26:04.193264    7674 eventsink.go:59] 
+I0426 14:26:04.193290    7674 eventsink.go:62] eventSink::Debug(<{%reset%}><{%reset%}>)
+I0426 14:26:04.193522    7674 eventsink.go:59] Action=GetUser&Version=2010-05-08
+I0426 14:26:04.193548    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Action=GetUser&Version=2010-05-08<{%reset%}>)
+I0426 14:26:04.565943    7674 eventsink.go:59] [aws-sdk-go-v2] Response
+I0426 14:26:04.565988    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>[aws-sdk-go-v2] Response<{%reset%}>)
+I0426 14:26:04.566238    7674 eventsink.go:59] HTTP/1.1 200 
+I0426 14:26:04.566267    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>HTTP/1.1 200 <{%reset%}>)
+I0426 14:26:04.566536    7674 eventsink.go:59] Content-Length: 549
+I0426 14:26:04.566563    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Content-Length: 549<{%reset%}>)
+I0426 14:26:04.566776    7674 eventsink.go:59] Content-Type: text/xml
+I0426 14:26:04.566806    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Content-Type: text/xml<{%reset%}>)
+I0426 14:26:04.567033    7674 eventsink.go:59] Date: Tue, 26 Apr 2022 21:26:04 GMT
+I0426 14:26:04.567062    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>Date: Tue, 26 Apr 2022 21:26:04 GMT<{%reset%}>)
+I0426 14:26:04.567326    7674 eventsink.go:59] X-Amzn-Requestid: b5024605-90bc-4ee0-9a73-8cb2dd915434
+I0426 14:26:04.567355    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>X-Amzn-Requestid: b5024605-90bc-4ee0-9a73-8cb2dd915434<{%reset%}>)
+I0426 14:26:04.567643    7674 eventsink.go:59] 
+I0426 14:26:04.567671    7674 eventsink.go:62] eventSink::Debug(<{%reset%}><{%reset%}>)
+I0426 14:26:04.567864    7674 eventsink.go:59] <GetUserResponse xmlns="https://iam.amazonaws.com/doc/2010-05-08/">
+I0426 14:26:04.567891    7674 eventsink.go:62] eventSink::Debug(<{%reset%}><GetUserResponse xmlns="https://iam.amazonaws.com/doc/2010-05-08/"><{%reset%}>)
+I0426 14:26:04.568112    7674 eventsink.go:59]   <GetUserResult>
+I0426 14:26:04.568140    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>  <GetUserResult><{%reset%}>)
+I0426 14:26:04.568409    7674 eventsink.go:59]     <User>
+I0426 14:26:04.568438    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>    <User><{%reset%}>)
+I0426 14:26:04.568687    7674 eventsink.go:59]       <Path>/</Path>
+I0426 14:26:04.568714    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <Path>/</Path><{%reset%}>)
+I0426 14:26:04.568959    7674 eventsink.go:59]       <PasswordLastUsed>2022-04-26T04:10:17Z</PasswordLastUsed>
+I0426 14:26:04.568987    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <PasswordLastUsed>2022-04-26T04:10:17Z</PasswordLastUsed><{%reset%}>)
+I0426 14:26:04.569230    7674 eventsink.go:59]       <Arn>arn:aws:iam::052848974346:user/phillip@pulumi.com</Arn>
+I0426 14:26:04.569260    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <Arn>arn:aws:iam::052848974346:user/phillip@pulumi.com</Arn><{%reset%}>)
+I0426 14:26:04.569510    7674 eventsink.go:59]       <UserName>phillip@pulumi.com</UserName>
+I0426 14:26:04.569544    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <UserName>phillip@pulumi.com</UserName><{%reset%}>)
+I0426 14:26:04.569747    7674 eventsink.go:59]       <UserId>AIDAQYTQLLIFENH3NVY3Y</UserId>
+I0426 14:26:04.569774    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <UserId>AIDAQYTQLLIFENH3NVY3Y</UserId><{%reset%}>)
+I0426 14:26:04.569994    7674 eventsink.go:59]       <CreateDate>2022-02-28T17:38:40Z</CreateDate>
+I0426 14:26:04.570020    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>      <CreateDate>2022-02-28T17:38:40Z</CreateDate><{%reset%}>)
+I0426 14:26:04.570267    7674 eventsink.go:59]     </User>
+I0426 14:26:04.570293    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>    </User><{%reset%}>)
+I0426 14:26:04.570547    7674 eventsink.go:59]   </GetUserResult>
+I0426 14:26:04.570573    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>  </GetUserResult><{%reset%}>)
+I0426 14:26:04.570794    7674 eventsink.go:59]   <ResponseMetadata>
+I0426 14:26:04.570819    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>  <ResponseMetadata><{%reset%}>)
+I0426 14:26:04.571108    7674 eventsink.go:59]     <RequestId>b5024605-90bc-4ee0-9a73-8cb2dd915434</RequestId>
+I0426 14:26:04.571136    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>    <RequestId>b5024605-90bc-4ee0-9a73-8cb2dd915434</RequestId><{%reset%}>)
+I0426 14:26:04.571386    7674 eventsink.go:59]   </ResponseMetadata>
+I0426 14:26:04.571411    7674 eventsink.go:62] eventSink::Debug(<{%reset%}>  </ResponseMetadata><{%reset%}>)
+I0426 14:26:04.571633    7674 eventsink.go:59] </GetUserResponse>
+I0426 14:26:04.571659    7674 eventsink.go:62] eventSink::Debug(<{%reset%}></GetUserResponse><{%reset%}>)
+I0426 14:26:04.573904    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: __defaults={[{forceDetachPolicies} {maxSessionDuration} {name} {path}]}
+I0426 14:26:04.573948    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: assumeRolePolicy={{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}}
+I0426 14:26:04.573957    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: forceDetachPolicies={false}
+I0426 14:26:04.573962    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: maxSessionDuration={3600}
+I0426 14:26:04.573968    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: name={eks-iam-eksRole-18791d6}
+I0426 14:26:04.573972    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).olds]: path={/}
+I0426 14:26:04.573990    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).news]: assumeRolePolicy={{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}}
+I0426 14:26:04.574808    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: __defaults={[{forceDetachPolicies} {maxSessionDuration} {name} {path}]}
+I0426 14:26:04.574850    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: assumeRolePolicy={{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}}
+I0426 14:26:04.574869    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: forceDetachPolicies={false}
+I0426 14:26:04.574874    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: maxSessionDuration={3600}
+I0426 14:26:04.574880    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: name={eks-iam-eksRole-18791d6}
+I0426 14:26:04.574883    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole).inputs]: path={/}
+I0426 14:26:04.574890    7674 provider_plugin.go:643] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole) success: inputs=#6 failures=#0
+I0426 14:26:04.574902    7674 provider_plugin.go:658] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6): executing (#olds=15,#news=6)
+I0426 14:26:04.574911    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: arn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.574916    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: assumeRolePolicy={{"Version":"2008-10-17","Statement":[{"Sid":"","Effect":"Allow","Principal":{"Service":"eks.amazonaws.com"},"Action":"sts:AssumeRole"}]}}
+I0426 14:26:04.574923    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: createDate={2022-04-26T20:58:42Z}
+I0426 14:26:04.574926    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: description={}
+I0426 14:26:04.574930    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: forceDetachPolicies={false}
+I0426 14:26:04.574933    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: id={eks-iam-eksRole-18791d6}
+I0426 14:26:04.574937    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: inlinePolicies={[{map[name:{} policy:{}]}]}
+I0426 14:26:04.574948    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: name={}
+I0426 14:26:04.574954    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: policy={}
+I0426 14:26:04.574958    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: managedPolicyArns={[]}
+I0426 14:26:04.574962    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: maxSessionDuration={3600}
+I0426 14:26:04.574971    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: name={eks-iam-eksRole-18791d6}
+I0426 14:26:04.574986    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: namePrefix={}
+I0426 14:26:04.575011    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: path={/}
+I0426 14:26:04.575018    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: tags={map[]}
+I0426 14:26:04.575024    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: tagsAll={map[]}
+I0426 14:26:04.575031    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).olds]: uniqueId={AROAQYTQLLIFK2QP66VJ4}
+I0426 14:26:04.575036    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: __defaults={[{forceDetachPolicies} {maxSessionDuration} {name} {path}]}
+I0426 14:26:04.575042    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: assumeRolePolicy={{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}}
+I0426 14:26:04.575046    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: forceDetachPolicies={false}
+I0426 14:26:04.575050    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: maxSessionDuration={3600}
+I0426 14:26:04.575054    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: name={eks-iam-eksRole-18791d6}
+I0426 14:26:04.575057    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6).news]: path={/}
+I0426 14:26:04.577573    7674 provider_plugin.go:724] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole,eks-iam-eksRole-18791d6) success: changes=1 #replaces=[] #stables=[name path namePrefix] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0426 14:26:04.577625    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole' after diff (same) (inputs=map[__defaults:{[{forceDetachPolicies} {maxSessionDuration} {name} {path}]} assumeRolePolicy:{{
+		    "Version": "2008-10-17",
+		    "Statement": [{
+		        "Sid": "",
+		        "Effect": "Allow",
+		        "Principal": {
+		            "Service": "eks.amazonaws.com"
+		        },
+		        "Action": "sts:AssumeRole"
+		    }]
+		}} forceDetachPolicies:{false} maxSessionDuration:{3600} name:{eks-iam-eksRole-18791d6} path:{/}])
+I0426 14:26:04.577668    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.577718    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.577747    7674 step_executor.go:364] StepExecutor worker(2): launching oneshot worker
+I0426 14:26:04.577844    7674 step_executor.go:364] StepExecutor worker(2): applying step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole (preview true)
+I0426 14:26:04.577911    7674 step_executor.go:364] StepExecutor worker(2): step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole retired
+I0426 14:26:04.577945    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole
+I0426 14:26:04.577963    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=aws:iam/role:Role, urn=urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole, #outs=15
+I0426 14:26:04.577991    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: arn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.578001    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: assumeRolePolicy={{"Version":"2008-10-17","Statement":[{"Sid":"","Effect":"Allow","Principal":{"Service":"eks.amazonaws.com"},"Action":"sts:AssumeRole"}]}}
+I0426 14:26:04.578006    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: createDate={2022-04-26T20:58:42Z}
+I0426 14:26:04.578010    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: description={}
+I0426 14:26:04.578014    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: forceDetachPolicies={false}
+I0426 14:26:04.578018    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: id={eks-iam-eksRole-18791d6}
+I0426 14:26:04.578022    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: inlinePolicies={[{map[name:{} policy:{}]}]}
+I0426 14:26:04.578030    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: name={}
+I0426 14:26:04.578034    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: policy={}
+I0426 14:26:04.578038    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: managedPolicyArns={[]}
+I0426 14:26:04.578042    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: maxSessionDuration={3600}
+I0426 14:26:04.578047    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: name={eks-iam-eksRole-18791d6}
+I0426 14:26:04.578051    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: namePrefix={}
+I0426 14:26:04.578054    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: path={/}
+I0426 14:26:04.578058    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: tags={map[]}
+I0426 14:26:04.578062    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: tagsAll={map[]}
+I0426 14:26:04.578067    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/role:Role,eks-iam-eksRole)]: uniqueId={AROAQYTQLLIFK2QP66VJ4}
+I0426 14:26:04.578699    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.578737    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.578732    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.578767    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: subnetIds={[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}
+I0426 14:26:04.578794    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: vpcConfig={map[subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}
+I0426 14:26:04.578812    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=aws:eks/cluster:Cluster, name=example, custom=true, #props=2, parent=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, protect=false, provider=urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894, deps=[urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:04.578832    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=aws:eks/cluster:Cluster,name=example,#props=2
+I0426 14:26:04.578839    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:04.578844    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:04.578855    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.578863    7674 provider_plugin.go:570] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example) executing (#olds=4,#news=2
+I0426 14:26:04.578760    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-0)]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.578881    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-0)]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.578893    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment, name=rpa-0, custom=true, #props=2, parent=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, protect=false, provider=urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894, deps=[urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:04.578926    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment,name=rpa-0,#props=2
+I0426 14:26:04.578784    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.578941    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-1)]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.578972    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-1)]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.578994    7674 source_eval.go:1072] ResourceMonitor.RegisterResource received: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment, name=rpa-1, custom=true, #props=2, parent=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, protect=false, provider=urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894, deps=[urn:pulumi:dev::aws-plugin-issue::aws:iam/role:Role::eks-iam-eksRole], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts={0 0 0}, providers=map[], replaceOnChanges=[], retainOnDelete=false
+I0426 14:26:04.578869    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: __defaults={[{name}]}
+I0426 14:26:04.579012    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: name={example-d617f64}
+I0426 14:26:04.579017    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.579021    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: vpcConfig={map[__defaults:{[{endpointPrivateAccess} {endpointPublicAccess}]} endpointPrivateAccess:{false} endpointPublicAccess:{true} subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}
+I0426 14:26:04.579033    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: __defaults={[{endpointPrivateAccess} {endpointPublicAccess}]}
+I0426 14:26:04.579038    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: endpointPrivateAccess={false}
+I0426 14:26:04.579042    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: endpointPublicAccess={true}
+I0426 14:26:04.579045    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).olds]: subnetIds={[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}
+I0426 14:26:04.579051    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).news]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.579055    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).news]: vpcConfig={map[subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}
+I0426 14:26:04.579061    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).news]: subnetIds={[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}
+I0426 14:26:04.579748    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: __defaults={[{name}]}
+I0426 14:26:04.579779    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: name={example-d617f64}
+I0426 14:26:04.579787    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.579792    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: __defaults={[{endpointPrivateAccess} {endpointPublicAccess}]}
+I0426 14:26:04.579797    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: endpointPrivateAccess={false}
+I0426 14:26:04.579801    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: endpointPublicAccess={true}
+I0426 14:26:04.579810    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: subnetIds={[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}
+I0426 14:26:04.579817    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example).inputs]: vpcConfig={map[__defaults:{[{endpointPrivateAccess} {endpointPublicAccess}]} endpointPrivateAccess:{false} endpointPublicAccess:{true} subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}
+I0426 14:26:04.579833    7674 provider_plugin.go:643] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example) success: inputs=#4 failures=#0
+I0426 14:26:04.579843    7674 provider_plugin.go:658] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64): executing (#olds=19,#news=4)
+I0426 14:26:04.579850    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: __meta={{"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0":{"create":1800000000000,"delete":900000000000,"update":3600000000000}}}
+I0426 14:26:04.579855    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:04.579860    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: certificateAuthorities={[{map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}]}
+I0426 14:26:04.579870    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.579880    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: certificateAuthority={map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}
+I0426 14:26:04.579886    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.579893    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:04.579897    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: enabledClusterLogTypes={[]}
+I0426 14:26:04.579902    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: encryptionConfig={<nil>}
+I0426 14:26:04.579906    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:04.579911    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: id={example-d617f64}
+I0426 14:26:04.579916    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:04.580005    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:04.580016    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:04.580021    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: kubernetesNetworkConfig={map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}
+I0426 14:26:04.580028    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: ipFamily={ipv4}
+I0426 14:26:04.580032    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:04.580035    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: name={example-d617f64}
+I0426 14:26:04.580039    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: platformVersion={eks.6}
+I0426 14:26:04.580042    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.580049    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: status={ACTIVE}
+I0426 14:26:04.580054    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: tags={map[]}
+I0426 14:26:04.580059    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: tagsAll={map[]}
+I0426 14:26:04.580070    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: version={1.21}
+I0426 14:26:04.580074    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:04.580085    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:04.580089    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: endpointPrivateAccess={false}
+I0426 14:26:04.580092    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: endpointPublicAccess={true}
+I0426 14:26:04.580096    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:04.580100    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: securityGroupIds={[]}
+I0426 14:26:04.580104    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:04.580108    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).olds]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:04.580113    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: __defaults={[{name}]}
+I0426 14:26:04.580117    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: name={example-d617f64}
+I0426 14:26:04.580121    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.580124    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: vpcConfig={map[__defaults:{[{endpointPrivateAccess} {endpointPublicAccess}]} endpointPrivateAccess:{false} endpointPublicAccess:{true} subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}
+I0426 14:26:04.580132    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: __defaults={[{endpointPrivateAccess} {endpointPublicAccess}]}
+I0426 14:26:04.580137    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: endpointPrivateAccess={false}
+I0426 14:26:04.580141    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: endpointPublicAccess={true}
+I0426 14:26:04.580146    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64).news]: subnetIds={[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}
+I0426 14:26:04.583527    7674 provider_plugin.go:724] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example,example-d617f64) success: changes=1 #replaces=[] #stables=[name roleArn] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0426 14:26:04.583572    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example' after diff (same) (inputs=map[__defaults:{[{name}]} name:{example-d617f64} roleArn:{arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6} vpcConfig:{map[__defaults:{[{endpointPrivateAccess} {endpointPublicAccess}]} endpointPrivateAccess:{false} endpointPublicAccess:{true} subnetIds:{[{subnet-0323d9d5445d31651} {subnet-0e82d2298e8742481}]}]}])
+I0426 14:26:04.583614    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:04.583636    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:04.583653    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.583658    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment,name=rpa-1,#props=2
+I0426 14:26:04.583663    7674 provider_plugin.go:570] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0) executing (#olds=3,#news=2
+I0426 14:26:04.583682    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).olds]: __defaults={[]}
+I0426 14:26:04.583709    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).olds]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.583717    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).olds]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.583723    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).news]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.583727    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).news]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.583628    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.583791    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.583804    7674 step_executor.go:364] StepExecutor worker(3): launching oneshot worker
+I0426 14:26:04.583883    7674 step_executor.go:364] StepExecutor worker(3): applying step same on urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example (preview true)
+I0426 14:26:04.583952    7674 step_executor.go:364] StepExecutor worker(3): step same on urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example retired
+I0426 14:26:04.583994    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example
+I0426 14:26:04.584015    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=aws:eks/cluster:Cluster, urn=urn:pulumi:dev::aws-plugin-issue::aws:eks/cluster:Cluster::example, #outs=19
+I0426 14:26:04.584045    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: __meta={{"e2bfb730-ecaa-11e6-8f88-34363bc7c4c0":{"create":1800000000000,"delete":900000000000,"update":3600000000000}}}
+I0426 14:26:04.584053    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:04.584057    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: certificateAuthorities={[{map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}]}
+I0426 14:26:04.584070    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.584076    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: certificateAuthority={map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}
+I0426 14:26:04.584088    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.584095    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:04.584099    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: enabledClusterLogTypes={[]}
+I0426 14:26:04.584103    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: encryptionConfig={<nil>}
+I0426 14:26:04.584106    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:04.584110    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: id={example-d617f64}
+I0426 14:26:04.584128    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).inputs]: __defaults={[]}
+I0426 14:26:04.584161    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).inputs]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.584180    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0).inputs]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.584189    7674 provider_plugin.go:643] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0) success: inputs=#3 failures=#0
+I0426 14:26:04.584198    7674 provider_plugin.go:658] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002): executing (#olds=3,#news=3)
+I0426 14:26:04.584204    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).olds]: id={eks-iam-eksRole-18791d6-20220426205843906800000002}
+I0426 14:26:04.584211    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).olds]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.584216    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).olds]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.584222    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).news]: __defaults={[]}
+I0426 14:26:04.584226    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).news]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.584230    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002).news]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.584114    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:04.584266    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:04.584276    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:04.584281    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: kubernetesNetworkConfig={map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}
+I0426 14:26:04.584287    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: ipFamily={ipv4}
+I0426 14:26:04.584291    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:04.584295    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: name={example-d617f64}
+I0426 14:26:04.584298    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: platformVersion={eks.6}
+I0426 14:26:04.584306    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.584311    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: status={ACTIVE}
+I0426 14:26:04.584314    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: tags={map[]}
+I0426 14:26:04.584319    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: tagsAll={map[]}
+I0426 14:26:04.584323    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: version={1.21}
+I0426 14:26:04.584326    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:04.584337    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:04.584340    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: endpointPrivateAccess={false}
+I0426 14:26:04.584344    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: endpointPublicAccess={true}
+I0426 14:26:04.584348    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:04.584355    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: securityGroupIds={[]}
+I0426 14:26:04.584359    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:04.584364    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:eks/cluster:Cluster,example)]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:04.584697    7674 provider_plugin.go:724] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0,eks-iam-eksRole-18791d6-20220426205843906800000002) success: changes=1 #replaces=[] #stables=[policyArn role] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0426 14:26:04.584718    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0' after diff (same) (inputs=map[__defaults:{[]} policyArn:{arn:aws:iam::aws:policy/AmazonEKSServicePolicy} role:{eks-iam-eksRole-18791d6}])
+I0426 14:26:04.584751    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:04.584759    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:04.584769    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.584794    7674 provider_plugin.go:570] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1) executing (#olds=3,#news=2
+I0426 14:26:04.584806    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).olds]: __defaults={[]}
+I0426 14:26:04.584828    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).olds]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.584841    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).olds]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.584849    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).news]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.584854    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).news]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.584796    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.584910    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.584922    7674 step_executor.go:364] StepExecutor worker(4): launching oneshot worker
+I0426 14:26:04.584949    7674 step_executor.go:364] StepExecutor worker(4): applying step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0 (preview true)
+I0426 14:26:04.584995    7674 step_executor.go:364] StepExecutor worker(4): step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0 retired
+I0426 14:26:04.585029    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0
+I0426 14:26:04.585044    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment, urn=urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-0, #outs=3
+I0426 14:26:04.585051    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-0)]: id={eks-iam-eksRole-18791d6-20220426205843906800000002}
+I0426 14:26:04.585057    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-0)]: policyArn={arn:aws:iam::aws:policy/AmazonEKSServicePolicy}
+I0426 14:26:04.585058    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.585115    7674 source_eval.go:345] handling default provider request for package aws
+I0426 14:26:04.585062    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-0)]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.585032    7674 source_eval.go:600] parseProviderRequest(aws): semver version is the empty string
+I0426 14:26:04.585182    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::aws::b72324ce-bb1d-49cc-9756-3b5d6f84b894)
+I0426 14:26:04.585194    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: name={example-d617f64}
+I0426 14:26:04.585125    7674 source_eval.go:403] checking if aws should be denied
+I0426 14:26:04.585283    7674 source_eval.go:437] Did not find a config for 'pulumi'
+I0426 14:26:04.585293    7674 source_eval.go:296] newRegisterDefaultProviderEvent(aws): no version specified, falling back to default version
+I0426 14:26:04.585397    7674 source_eval.go:299] newRegisterDefaultProviderEvent(aws): default version hit on version 4.38.1
+I0426 14:26:04.585254    7674 source_eval.go:663] ResourceMonitor.Invoke received: tok=aws:eks/getCluster:getCluster #args=1
+I0426 14:26:04.585444    7674 provider_plugin.go:1243] Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster) executing (#args=1)
+I0426 14:26:04.585469    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).args]: name={example-d617f64}
+I0426 14:26:04.585475    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).inputs]: __defaults={[]}
+I0426 14:26:04.585584    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).inputs]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.585592    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1).inputs]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.585598    7674 provider_plugin.go:643] Provider[aws, 0xc001558540].Check(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1) success: inputs=#3 failures=#0
+I0426 14:26:04.585605    7674 provider_plugin.go:658] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001): executing (#olds=3,#news=3)
+I0426 14:26:04.585610    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).olds]: id={eks-iam-eksRole-18791d6-20220426205843788800000001}
+I0426 14:26:04.585616    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).olds]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.585620    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).olds]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.585625    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).news]: __defaults={[]}
+I0426 14:26:04.585646    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).news]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.585654    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001).news]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.585408    7674 source_eval.go:312] newRegisterDefaultProviderEvent(aws): no pluginDownloadURL specified, falling back to default pluginDownloadURL
+I0426 14:26:04.585677    7674 source_eval.go:320] newRegisterDefaultProviderEvent(aws): default pluginDownloadURL miss, sending empty string to engine
+I0426 14:26:04.585706    7674 source_eval.go:378] waiting for default provider for package aws
+I0426 14:26:04.585733    7674 source_eval.go:167] EvalSourceIterator produced a registration: t=pulumi:providers:aws,name=default,#props=3
+I0426 14:26:04.586040    7674 provider_plugin.go:724] Provider[aws, 0xc001558540].Diff(urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1,eks-iam-eksRole-18791d6-20220426205843788800000001) success: changes=1 #replaces=[] #stables=[role policyArn] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0426 14:26:04.586079    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1' after diff (same) (inputs=map[__defaults:{[]} policyArn:{arn:aws:iam::aws:policy/AmazonEKSClusterPolicy} role:{eks-iam-eksRole-18791d6}])
+I0426 14:26:04.586102    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:04.586108    7674 deployment_executor.go:446] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0426 14:26:04.586119    7674 registry.go:260] ProviderRegistry.Check(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default) executing (#olds=3,#news=3)
+I0426 14:26:04.586107    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.586225    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.586238    7674 step_executor.go:364] StepExecutor worker(5): launching oneshot worker
+I0426 14:26:04.586284    7674 step_executor.go:364] StepExecutor worker(5): applying step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1 (preview true)
+I0426 14:26:04.586326    7674 step_executor.go:364] StepExecutor worker(5): step same on urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1 retired
+I0426 14:26:04.586344    7674 source_eval.go:1152] stripping unknowns from RegisterResource response for urn urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1
+I0426 14:26:04.586373    7674 source_eval.go:1162] ResourceMonitor.RegisterResource operation finished: t=aws:iam/rolePolicyAttachment:RolePolicyAttachment, urn=urn:pulumi:dev::aws-plugin-issue::aws:iam/rolePolicyAttachment:RolePolicyAttachment::rpa-1, #outs=3
+I0426 14:26:04.586399    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-1)]: id={eks-iam-eksRole-18791d6-20220426205843788800000001}
+I0426 14:26:04.586409    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-1)]: policyArn={arn:aws:iam::aws:policy/AmazonEKSClusterPolicy}
+I0426 14:26:04.586413    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.RegisterResource(aws:iam/rolePolicyAttachment:RolePolicyAttachment,rpa-1)]: role={eks-iam-eksRole-18791d6}
+I0426 14:26:04.658643    7674 plugins.go:1098] GetPluginPath(resource, aws, 4.38.1): enabling new plugin behavior
+I0426 14:26:04.658689    7674 plugins.go:1184] SelectCompatiblePlugin(..., aws): beginning
+I0426 14:26:04.658715    7674 plugins.go:1213] SelectCompatiblePlugin(..., aws): best plugin aws-4.38.1: semver match
+I0426 14:26:04.658725    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.0: semver mismatch
+I0426 14:26:04.658730    7674 plugins.go:1217] SelectCompatiblePlugin(..., aws): skipping plugin aws-5.1.2: semver mismatch
+I0426 14:26:04.658734    7674 plugins.go:1226] SelectCompatiblePlugin(..., aws): selecting plugin 'aws-4.38.1': best match 
+I0426 14:26:04.658745    7674 plugins.go:1145] GetPluginPath(resource, aws, 4.38.1): found in cache at /home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws
+I0426 14:26:04.658753    7674 plugin.go:184] Launching plugin 'aws (resource)' from '/home/pedwards/.pulumi/plugins/resource-aws-v4.38.1/pulumi-resource-aws' with args: 127.0.0.1:44269
+I0426 14:26:04.781026    7674 provider_plugin.go:1474] Provider[aws, 0xc0016e5980].GetPluginInfo() executing
+I0426 14:26:04.781417    7674 provider_plugin.go:222] Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default) executing (#olds=3,#news=3)
+I0426 14:26:04.781451    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: profile={pulumi-ce}
+I0426 14:26:04.781462    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: region={us-west-2}
+I0426 14:26:04.781466    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: version={4.38.1}
+I0426 14:26:04.781478    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: profile={pulumi-ce}
+I0426 14:26:04.781482    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: region={us-west-2}
+I0426 14:26:04.781486    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: version={4.38.1}
+I0426 14:26:04.782122    7674 provider_plugin.go:254] Provider[aws, 0xc0016e5980].CheckConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default) unimplemented rpc: returning news as is
+I0426 14:26:04.782153    7674 registry.go:184] setProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0426 14:26:04.782168    7674 registry.go:304] ProviderRegistry.Diff(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default,77e897fc-fcdc-4ed8-bc37-693b7f37ee99): executing (#olds=3,#news=3)
+I0426 14:26:04.782174    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0426 14:26:04.782181    7674 provider_plugin.go:327] Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default) executing (#olds=3,#news=3)
+I0426 14:26:04.782187    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: profile={pulumi-ce}
+I0426 14:26:04.782192    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: region={us-west-2}
+I0426 14:26:04.782195    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).olds]: version={4.38.1}
+I0426 14:26:04.782200    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: profile={pulumi-ce}
+I0426 14:26:04.782203    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: region={us-west-2}
+I0426 14:26:04.782206    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default).news]: version={4.38.1}
+I0426 14:26:04.782529    7674 provider_plugin.go:358] Provider[aws, 0xc0016e5980].DiffConfig(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default) unimplemented rpc: returning DiffUnknown with no replaces
+I0426 14:26:04.782559    7674 registry.go:342] ProviderRegistry.Diff(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default,77e897fc-fcdc-4ed8-bc37-693b7f37ee99): executed (1, []resource.PropertyKey(nil))
+I0426 14:26:04.782573    7674 step_generator.go:636] Planner decided not to update 'urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default' after diff (same) (inputs=map[profile:{pulumi-ce} region:{us-west-2} version:{4.38.1}])
+I0426 14:26:04.782607    7674 step_executor.go:364] StepExecutor worker(-2): worker received chain for execution
+I0426 14:26:04.782616    7674 step_executor.go:364] StepExecutor worker(-2): worker waiting for incoming chains
+I0426 14:26:04.782626    7674 step_executor.go:364] StepExecutor worker(6): launching oneshot worker
+I0426 14:26:04.782635    7674 step_executor.go:364] StepExecutor worker(6): applying step same on urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default (preview true)
+I0426 14:26:04.782640    7674 registry.go:353] Same(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default::77e897fc-fcdc-4ed8-bc37-693b7f37ee99)
+I0426 14:26:04.782654    7674 step_executor.go:364] StepExecutor worker(6): step same on urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default retired
+I0426 14:26:04.782679    7674 source_eval.go:387] registered default provider for package aws: urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default
+I0426 14:26:04.782691    7674 registry.go:174] GetProvider(urn:pulumi:dev::aws-plugin-issue::pulumi:providers:aws::default::77e897fc-fcdc-4ed8-bc37-693b7f37ee99)
+I0426 14:26:04.782700    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: name={example-d617f64}
+I0426 14:26:04.782706    7674 source_eval.go:663] ResourceMonitor.Invoke received: tok=aws:eks/getCluster:getCluster #args=1
+I0426 14:26:04.782726    7674 provider_plugin.go:1243] Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster) executing (#args=1)
+I0426 14:26:04.782731    7674 rpc.go:74] Marshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).args]: name={example-d617f64}
+I0426 14:26:04.896530    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:04.896696    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.896752    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: certificateAuthorities={[{map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}]}
+I0426 14:26:04.896824    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:04.896851    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: enabledClusterLogTypes={[]}
+I0426 14:26:04.896871    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:04.896889    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: id={example-d617f64}
+I0426 14:26:04.896910    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:04.896932    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:04.897013    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:04.897234    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: ipFamily={ipv4}
+I0426 14:26:04.897281    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:04.897307    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: kubernetesNetworkConfigs={[{map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}]}
+I0426 14:26:04.897344    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: name={example-d617f64}
+I0426 14:26:04.897369    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: platformVersion={eks.6}
+I0426 14:26:04.897387    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.897405    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: status={ACTIVE}
+I0426 14:26:04.897424    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: tags={map[]}
+I0426 14:26:04.897509    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: version={1.21}
+I0426 14:26:04.897548    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:04.897569    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: endpointPrivateAccess={false}
+I0426 14:26:04.897587    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: endpointPublicAccess={true}
+I0426 14:26:04.897623    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:04.897645    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: securityGroupIds={[]}
+I0426 14:26:04.897665    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:04.897691    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:04.897721    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster).returns]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:04.897870    7674 provider_plugin.go:1292] Provider[aws, 0xc001558540].Invoke(aws:eks/getCluster:getCluster) success (#ret=15,#failures=0) success
+I0426 14:26:04.897928    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:04.897954    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: certificateAuthorities={[{map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}]}
+I0426 14:26:04.897993    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:04.898037    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:04.898058    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: enabledClusterLogTypes={[]}
+I0426 14:26:04.898076    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:04.898094    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: id={example-d617f64}
+I0426 14:26:04.898110    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:04.898147    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:04.898171    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:04.898192    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: kubernetesNetworkConfigs={[{map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}]}
+I0426 14:26:04.898221    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: ipFamily={ipv4}
+I0426 14:26:04.898238    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:04.898258    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: name={example-d617f64}
+I0426 14:26:04.898279    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: platformVersion={eks.6}
+I0426 14:26:04.898296    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:04.898313    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: status={ACTIVE}
+I0426 14:26:04.898329    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: tags={map[]}
+I0426 14:26:04.898349    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: version={1.21}
+I0426 14:26:04.898369    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:04.898511    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:04.898550    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpointPrivateAccess={false}
+I0426 14:26:04.898586    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpointPublicAccess={true}
+I0426 14:26:04.898604    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:04.898624    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: securityGroupIds={[]}
+I0426 14:26:04.898642    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:04.898663    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:05.055536    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:05.055577    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:05.055590    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: certificateAuthority={map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}
+I0426 14:26:05.055609    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:05.055614    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: enabledClusterLogTypes={[]}
+I0426 14:26:05.055618    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:05.055621    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: id={example-d617f64}
+I0426 14:26:05.055625    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:05.055630    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:05.055638    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:05.055673    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: ipFamily={ipv4}
+I0426 14:26:05.055677    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:05.055682    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: kubernetesNetworkConfigs={[{map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}]}
+I0426 14:26:05.055707    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: name={example-d617f64}
+I0426 14:26:05.055715    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: platformVersion={eks.6}
+I0426 14:26:05.055719    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:05.055722    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: status={ACTIVE}
+I0426 14:26:05.055727    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: tags={map[]}
+I0426 14:26:05.055731    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: version={1.21}
+I0426 14:26:05.055738    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:05.055743    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: endpointPrivateAccess={false}
+I0426 14:26:05.055747    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: endpointPublicAccess={true}
+I0426 14:26:05.055751    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:05.055756    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: securityGroupIds={[]}
+I0426 14:26:05.055781    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:05.055789    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:05.055795    7674 rpc.go:274] Unmarshaling property for RPC[Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster).returns]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:05.055807    7674 provider_plugin.go:1292] Provider[aws, 0xc0014b9260].Invoke(aws:eks/getCluster:getCluster) success (#ret=15,#failures=0) success
+I0426 14:26:05.055814    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: arn={arn:aws:eks:us-west-2:052848974346:cluster/example-d617f64}
+I0426 14:26:05.055818    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: certificateAuthority={map[data:{LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}]}
+I0426 14:26:05.055825    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: data={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:05.055833    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: createdAt={2022-04-26 20:58:45.547 +0000 UTC}
+I0426 14:26:05.055837    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: enabledClusterLogTypes={[]}
+I0426 14:26:05.055841    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpoint={https://D4C51FAD03B2D85D5C75ADFFF57B48CA.gr7.us-west-2.eks.amazonaws.com}
+I0426 14:26:05.055844    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: id={example-d617f64}
+I0426 14:26:05.055848    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: identities={[{map[oidcs:{[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}]}]}
+I0426 14:26:05.055854    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: oidcs={[{map[issuer:{https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}]}]}
+I0426 14:26:05.055860    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: issuer={https://oidc.eks.us-west-2.amazonaws.com/id/D4C51FAD03B2D85D5C75ADFFF57B48CA}
+I0426 14:26:05.055866    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: kubernetesNetworkConfigs={[{map[ipFamily:{ipv4} serviceIpv4Cidr:{172.20.0.0/16}]}]}
+I0426 14:26:05.055949    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: ipFamily={ipv4}
+I0426 14:26:05.055978    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: serviceIpv4Cidr={172.20.0.0/16}
+I0426 14:26:05.055986    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: name={example-d617f64}
+I0426 14:26:05.055991    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: platformVersion={eks.6}
+I0426 14:26:05.055995    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: roleArn={arn:aws:iam::052848974346:role/eks-iam-eksRole-18791d6}
+I0426 14:26:05.055998    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: status={ACTIVE}
+I0426 14:26:05.056001    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: tags={map[]}
+I0426 14:26:05.056007    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: version={1.21}
+I0426 14:26:05.056012    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: vpcConfig={map[clusterSecurityGroupId:{sg-0a88180a7463cc0f5} endpointPrivateAccess:{false} endpointPublicAccess:{true} publicAccessCidrs:{[{0.0.0.0/0}]} securityGroupIds:{[]} subnetIds:{[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]} vpcId:{vpc-0f46995f9f01e39d5}]}
+I0426 14:26:05.056022    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: clusterSecurityGroupId={sg-0a88180a7463cc0f5}
+I0426 14:26:05.056026    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpointPrivateAccess={false}
+I0426 14:26:05.056030    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: endpointPublicAccess={true}
+I0426 14:26:05.056033    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: publicAccessCidrs={[{0.0.0.0/0}]}
+I0426 14:26:05.056041    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: securityGroupIds={[]}
+I0426 14:26:05.056045    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: subnetIds={[{subnet-0e82d2298e8742481} {subnet-0323d9d5445d31651}]}
+I0426 14:26:05.056050    7674 rpc.go:74] Marshaling property for RPC[ResourceMonitor.Invoke(aws:eks/getCluster:getCluster)]: vpcId={vpc-0f46995f9f01e39d5}
+I0426 14:26:05.056721    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResourceOutputs(urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev)]: clusterCAData={}
+I0426 14:26:05.056754    7674 rpc.go:274] Unmarshaling property for RPC[ResourceMonitor.RegisterResourceOutputs(urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev)]: clusterCADataDefault={LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXlOakl4TURVd01Gb1hEVE15TURReU16SXhNRFV3TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTGE2Cis3aVZzeHAvalBxVU12RlpoM2FaRStiQ3Nxb1NtMnhTVStXV3cwazZ4KzhFWkxHTGdRRlNESEZpUnlQdStXL2IKS3ZTOW5sTkhzTXZ5UEI3UmVuRXN1d0h4K29mU2JrRmZrY29iNm1Kam5vU3U5OTJqRjFOcFRHMW52TmYyQTMwUgo1K0RhLzR2c0gvSFIxWjM1ZTRpR3FDN3VrUEhtRC9LL0RqOFBBczdtdXk3c2pCNFNNYkNKNEdUem1ndDQ4Mi9zCm9QR0tjbWtkNm01ZGNCemVialZkTEw2TmlIbEgvc1plS00zd000QjRZSDd3RFIyS0JQWWsxTHRHNkZpdDlLYTcKbDZmWXpaUkhFU0JUOFVCQVcrYTNseU1vdHBFeXg3WTh4Ulp4Wkxvb0gwUktwUkpGT0FQL1BwUWFEdXg5Tjd5LwpreTVyYWdmTW1yZjNqb2w2dlRFQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZOY0gzNnBYNVhPUk1kRTJ5SU1iczhuUEZXRnpNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFDUkNuS0hjYUZiZy94L1lyYkd2bGY3Z2I3SEJaUm5kV0dseUFNWDRpUDREWE5rcmFITwpheTQ0VkU3c1NweDIzQitCZDNqRXNJTXNOUFB6Q0h2ZFpRVVZHWVJpTS9KZThtWkQ2Y05QY1h5SEVqS2U2ZjhmCjNuVVJZREY1VXZWOFU4Rk0wSVBTdHNhd2t3c0F2ZENyNE9tYUtJN041bmo5Yzdsc21uS0RMdlhmZ2IrU25MNE4KbU83Z0xuRmIrMHRaaHUxVUx6QVRZbTdySnFFOFNhWjNGZEF5anZoNFRSRCtNNW9rWVBZQW8yd1UxNU1BS2V4Qgo1aHZtbjVSb3ZmaW9zQ1o4cTE0SlFKTUwvVWRNNWp5MDFaMFY2T0ZsTWUvcXM5VHBqMEtsemozb0xCVndKVGdhCjFxUFZzaS9nUVBiTVQzY1Rad2ZCQXNhMUFmRm85NmJJTHRpSwotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==}
+I0426 14:26:05.056768    7674 source_eval.go:1207] ResourceMonitor.RegisterResourceOutputs received: urn=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, #outs=2
+I0426 14:26:05.056797    7674 source_eval.go:172] EvalSourceIterator produced a completion: urn=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev,#outs=2
+I0426 14:26:05.056826    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0426 14:26:05.056836    7674 deployment_executor.go:452] deploymentExecutor.handleSingleEvent(...): received register resource outputs
+I0426 14:26:05.056845    7674 step_executor.go:364] StepExecutor worker(-1): registered resource outputs urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev: old=#2, new=#2
+I0426 14:26:05.056891    7674 source_eval.go:1231] ResourceMonitor.RegisterResourceOutputs operation finished: urn=urn:pulumi:dev::aws-plugin-issue::pulumi:pulumi:Stack::aws-plugin-issue-dev, #outs=2
+I0426 14:26:05.060570    7674 langruntime_plugin.go:200] langhost[go].RunPlan(pwd=/home/pedwards/repos/aws-plugin-issue,program=.,...,dryrun=true) success: progerr=
+I0426 14:26:05.061295    7674 deployment_executor.go:259] deploymentExecutor.Execute(...): incoming event (nil? true, <nil>)
+I0426 14:26:05.061326    7674 deployment_executor.go:389] performDeletes(...): beginning
+I0426 14:26:05.061337    7674 step_generator.go:1172] Planner trusts dependency graph, scheduling deletions in parallel
+I0426 14:26:05.061343    7674 step_executor.go:364] StepExecutor worker(-1): StepExecutor.waitForCompletion(): waiting for worker threads to exit
+I0426 14:26:05.061349    7674 step_executor.go:364] StepExecutor worker(-2): worker received nil chain, exiting
+I0426 14:26:05.061360    7674 step_executor.go:364] StepExecutor worker(-1): StepExecutor.waitForCompletion(): worker threads all exited
+I0426 14:26:05.061400    7674 deployment_executor.go:303] deploymentExecutor.Execute(...): step executor has completed
+I0426 14:26:05.061516    7674 deployment_executor.go:161] deploymentExecutor.Execute(...): exiting provider canceller
+I0426 14:26:05.067769    7674 ignore.go:44] Explicitly ignoring and discarding error: rpc error: code = Canceled desc = grpc: the client connection is closing
+I0426 14:26:05.067951    7674 update.go:195] *** Update(preview=true) complete ***
